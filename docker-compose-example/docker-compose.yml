@@ -1,0 +1,10 @@
+rails:
+  build: .
+  volumes:
+    - ".:/app"
+  links:
+    - "db"
+  environment:
+    - VIRTUAL_HOST=rails.docker
+db:
+  image: postgres
