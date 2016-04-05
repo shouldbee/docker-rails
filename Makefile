@@ -1,4 +1,4 @@
-IMAGE := suin/rails
+IMAGE := shouldbee/rails
 
 build:
 	docker build -t $(IMAGE) .
